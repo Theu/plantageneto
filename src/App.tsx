@@ -1,5 +1,9 @@
-import React from 'react';
+import React from "react";
+import { Header } from "./client/components/Header/Header";
+import { Homepage } from "./client/components/HomePage/HomePage";
+import { getPlantagenetoContent } from "./server/services/contentful";
 
-const App = () => (<div>Entry point</div>)
+getPlantagenetoContent();
+const App = () => <><Header /><Homepage /></>;
 
 export default App;
